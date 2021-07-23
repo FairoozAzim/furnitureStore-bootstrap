@@ -6,7 +6,11 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
+
+
+/* ====================Nav and Header=================== */
 
 .bg-color {
     background-color: #f2e1d9;
@@ -21,6 +25,13 @@ body {
 
 .nav-items {
     margin-left: 150px;
+}
+
+.nav-sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f2e1d9;
+    z-index: 3;
 }
 
 #item {
@@ -68,4 +79,71 @@ body {
     padding: 18px;
     border-radius: 0%;
     text-transform: uppercase;
+}
+
+
+/* ====================Popular Section=================== */
+
+.card-outline {
+    border: 0.5px solid rgb(245, 243, 243);
+}
+
+
+/* ====================Best Section=================== */
+
+.best {
+    background-color: #f2e1d9;
+}
+
+.best-details {
+    width: 35%;
+}
+
+
+/* ====================Services Section=================== */
+
+.services {
+    background-color: #f2e1d9;
+}
+
+
+/* ====================Footer Section=================== */
+
+.footer {
+    background-color: #1D2547;
+    color: white;
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20%;
+}
+
+.footer p {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 15%;
+}
+
+.footer .social {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* ==================button========== */
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 50%;
+}
+
+.btn-scroll {
+    background-color: #FD8F5F;
+    color: white;
 }
