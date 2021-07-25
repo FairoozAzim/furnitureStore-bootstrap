@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kakoli Furniture</title>
+    <title>Furniture Ecommerce</title>
     <!-- bootstrap css link -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -19,9 +19,9 @@
         <nav class="navbar nav-sticky navbar-expand-lg  bg">
             <div class="container-fluid">
                 <a class="navbar-brand logo p-0" href="#">
-                    <img src="images/brand-logo.webp" alt="" width="160px">
+                    <img src="images/brand-logo.webp" alt="" width="130px">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -67,53 +67,250 @@
     </header>
     <!--=================== main body starts here==================== -->
     <main>
-        <section class=" container popular mt-5">
-            <h1>Popular Products</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, obcaecati.</p>
-            <nav>
-                <div class="container">
-                    <div class=" d-flex justify-content-center mt-5">
-                        <a class="nav-link active" aria-current="page" href="#">Sofa</a>
-                        <a class="nav-link" href="#">Table</a>
-                        <a class="nav-link" href="#">Chair</a>
-                        <a class="nav-link " href="#">Bed</a>
-                        <a class="nav-link " href="#">Lighting</a>
-                        <a class="nav-link " href="#">Decor</a>
+        <section class=" container popular mt-5 text-center">
+            <h1 class="title">Popular Products</h1>
+            <p class="description">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, <br> eros dolor interdum nulla.</p>
+            <ul class="nav nav-tabs d-flex justify-content-center mb-5" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active tab" id="home-tab" data-bs-toggle="tab" data-bs-target="#sofa" type="button" role="tab" aria-controls="home" aria-selected="true">Sofa</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab" id="profile-tab" data-bs-toggle="tab" data-bs-target="#table" type="button" role="tab" aria-controls="profile" aria-selected="false">Table</button>
+                </li>
+                <li class="nav-item  tab" role="presentation">
+                    <button class="nav-link tab" id="contact-tab" data-bs-toggle="tab" data-bs-target="#chair" type="button" role="tab" aria-controls="contact" aria-selected="false">Chair</button>
+                </li>
+                <li class="nav-item  tab" role="presentation">
+                    <button class="nav-link tab" id="contact-tab" data-bs-toggle="tab" data-bs-target="#bed" type="button" role="tab" aria-controls="contact" aria-selected="false">Bed</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab" id="contact-tab" data-bs-toggle="tab" data-bs-target="#lighting" type="button" role="tab" aria-controls="contact" aria-selected="false">Lighting</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab" id="contact-tab" data-bs-toggle="tab" data-bs-target="#decore" type="button" role="tab" aria-controls="contact" aria-selected="false">Decore</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="sofa" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container row row-cols-1 row-cols-md-3 g-4" id="sofa">
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="card-outline ">
+                                <img src="images/sofa-3.webp " class="card-img-top " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
+
                 </div>
-            </nav>
-            <div class="container row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card-outline">
-                        <img src="images/sofa-1.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                <div class="tab-pane fade" id="table" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col ">
+                            <div class="card-outline ">
+                                <img src="images/sofa-1.webp " class="card-img-top " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center">
-                            <h5>$367</h5>
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="card-outline ">
+                                <img src="images/sofa-3.webp " class="card-img-top " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card-outline">
-                        <img src="images/sofa-2.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                <div class="tab-pane fade" id="chair" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container row row-cols-1 row-cols-md-3 g-4" id="sofa">
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center">
-                            <h5>$367</h5>
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="card-outline ">
+                                <img src="images/sofa-3.webp " class="card-img-top " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col ">
-                    <div class="card-outline ">
-                        <img src="images/sofa-3.webp " class="card-img-top " alt="... ">
-                        <div class="card-body ">
-                            <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                <div class="tab-pane fade" id="bed" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container row row-cols-1 row-cols-md-3 g-4" id="sofa">
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center">
-                            <h5>$367</h5>
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="card-outline ">
+                                <img src="images/sofa-3.webp " class="card-img-top " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="lighting" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container row row-cols-1 row-cols-md-3 g-4" id="sofa">
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="card-outline ">
+                                <img src="images/sofa-3.webp " class="card-img-top " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="decore" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container row row-cols-1 row-cols-md-3 g-4" id="sofa">
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-outline">
+                                <img src="images/sofa-2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="card-outline ">
+                                <img src="images/sofa-3.webp " class="card-img-top " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="price">$367</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,22 +318,22 @@
         </section>
         <section class="best mt-5">
             <div class="row g-3 d-flex align-items-center">
-                <div class="col-7 mt-0">
-                    <img src="images/visit_bg.png" alt="" width="730px" height="500px">
+                <div class="col-lg-7 col-md-12 col-sm-12 mt-0 best-image">
+                    <img src="images/visit_bg.png" alt="" width="100%" height="500px">
                 </div>
-                <div class="col-5 best-details">
-                    <h1>Best Furniture <br> Manufacturer</h1>
-                    <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla. <br> Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
+                <div class="col-lg-4 col-md-12 col-sm-12 ms-5 best-details">
+                    <h1 class="title">Best Furniture <br> Manufacturer</h1>
+                    <p class="description mt-2">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla. <br> Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
                         nulla.
                     </p>
-                    <button class="btn btn-discover">DISCOVER MORE</button>
+                    <button class="btn btn-discover mt-4">DISCOVER MORE</button>
                 </div>
             </div>
 
         </section>
         <section class="container products mt-5 text-center mb-5">
-            <h1>Products You May Like</h1>
-            <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+            <h1 class="title">Products You May Like</h1>
+            <p class="description">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
             <div class="container row row-cols-1 row-cols-md-3 g-4 mt-5 d-flex justify-content-center">
                 <div class="col">
                     <div class="card-outline">
@@ -145,7 +342,7 @@
                             <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
                         </div>
                         <div class="text-center">
-                            <h5>$367</h5>
+                            <h5 class="price">$367</h5>
                         </div>
                     </div>
                 </div>
@@ -156,7 +353,7 @@
                             <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
                         </div>
                         <div class="text-center">
-                            <h5>$367</h5>
+                            <h5 class="price">$367</h5>
                         </div>
                     </div>
                 </div>
@@ -167,30 +364,45 @@
                             <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
                         </div>
                         <div class="text-center">
-                            <h5>$367</h5>
+                            <h5 class="price">$367</h5>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-discover">Discover More</button>
+                <button class=" btn-clear">Discover More</button>
             </div>
         </section>
         <section class="container instagram text-center mt-5 mb-5">
-            <h1> <img class="me-2" src="images/insta.webp" alt="">GET INSPIRED WITH INSTAGRAM</h1>
-            <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
-            <button class="btn btn-discover mt-5 mb-5">DISCOVER MORE</button>
+            <h1 class="title"> <img class="me-2" src="images/insta.webp" alt="">GET INSPIRED WITH INSTAGRAM</h1>
+            <p class="description">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+            <button class="btn-clear mt-5 mb-5">DISCOVER MORE</button>
             <div class="row g-3">
-                <div class="col-6">
-                    <img src="images/inspire-1.webp" alt="" width="500px" height="400px">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="insta">
+                        <img class="insta-image" src="images/inspire-1.webp" alt="">
+                        <div class="insta-link">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-6">
-                    <img src="images/inspire-2.webp" alt="" width="500px" height="400px">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="insta">
+                        <img class="insta-image" src="images/inspire-2.webp" alt="">
+                        <div class="insta-link">
+
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
         </section>
         <section class="container top-pick text-center mt-5">
-            <h1>TOP PICK</h1>
-            <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra <br> ornare, eros dolor interdum nulla</p>
+            <h1 class="title">TOP PICK</h1>
+            <p class="description">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra <br> ornare, eros dolor interdum nulla</p>
             <div class="container row row-cols-1 row-cols-md-3 g-4 mt-5 d-flex justify-content-center">
                 <div class="col">
                     <div class="card-outline">
@@ -199,7 +411,7 @@
                             <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
                         </div>
                         <div class="text-center">
-                            <h5>$367</h5>
+                            <h5 class="price">$367</h5>
                         </div>
                     </div>
                 </div>
@@ -210,7 +422,7 @@
                             <p class="card-text text-center">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
                         </div>
                         <div class="text-center">
-                            <h5>$367</h5>
+                            <h5 class="price">$367</h5>
                         </div>
                     </div>
                 </div>
@@ -221,32 +433,32 @@
                             <p class="card-text text-center ">Bly Microfiber / Microsuede 56" Armless Loveseat</p>
                         </div>
                         <div class="text-center">
-                            <h5>$367</h5>
+                            <h5 class="price">$367</h5>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-discover">Discover More</button>
+                <button class="btn-clear">Discover More</button>
             </div>
         </section>
         <section class="services mt-5 p-5">
             <div class="container">
                 <div class="row gx-2">
-                    <div class="col-3 ">
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
                         <img class="mb-4" src="images/services1.svg" alt="">
                         <h5>Fast & Free Delivery</h5>
                         <p>Free delivery on all orders</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <img class="mb-4 " src="images/services2.svg" alt="">
                         <h5>Secure Payment</h5>
                         <p>Free delivery on all orders</p>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <img class="mb-4" src="images/services3.svg" alt="">
                         <h5>Money Back Guarantee</h5>
                         <p>Free delivery on all orders</p>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <img class="mb-4" src="images/services4.svg" alt="">
                         <h5>Online SUpport</h5>
                         <p>Free delivery on all orders</p>
@@ -262,7 +474,7 @@
     <!--=================== footer starts here==================== -->
     <footer class="footer p-5">
         <div class="row gx-5">
-            <div class="col-4 me-5">
+            <div class="col-lg-4 col-md-12 col-sm-12 me-5">
                 <img src="images/footer-logo.webp" alt="">
                 <p class="mt-5">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
                 <a href=""><i class="fab fa-facebook-f social me-4"></i></a>
@@ -270,24 +482,27 @@
                 <a href=""><i class="fab fa-pinterest-p social me-4"></i></a>
 
             </div>
-            <div class="col-2 me-5">
+            <div class="col-lg-2 col-md-12 col-sm-12  me-5-lg">
                 <h4>Quick Links</h4>
                 <p>Image Licensin</p>
                 <p>Style Guide</p>
                 <p>Privacy Policy</p>
             </div>
-            <div class="col-2 me-5">
+            <div class="col-lg-2 col-md-12 col-sm-12 me-5">
                 <h4>Shop Category</h4>
                 <p>Image Licensin</p>
                 <p>Style Guide</p>
                 <p>Privacy Policy</p>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-md-12 col-sm-12">
                 <h4>Partners</h4>
                 <p>Image Licensin</p>
                 <p>Style Guide</p>
                 <p>Privacy Policy</p>
             </div>
+        </div>
+        <div class=" text-center mb-0 pb-0">
+            <p class="copyright">Copyright ©2021 All rights reserved | This template is made with <i class="fas fa-heart heart"></i> by <a href="">Colorlib</a> </p>
         </div>
 
     </footer>
