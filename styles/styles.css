@@ -28,14 +28,13 @@ body {
 }
 
 .logo {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    margin-top: -1%;
+    margin-left: -1%;
 }
 
 .nav-items {
-    margin-left: 150px;
+    margin-left: 10px;
+    margin-top: -2%;
 }
 
 .nav-sticky {
@@ -46,6 +45,7 @@ body {
 }
 
 .toggler {
+    position: relative;
     color: black;
     background-color: aquamarine;
 }
@@ -63,6 +63,7 @@ body {
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: -4%;
 }
 
 .hero-caption {
