@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <script src="https://kit.fontawesome.com/7f2cb48dfe.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -19,9 +18,14 @@
 
 </head>
 
-<body>
-    <!-- ========spinner======================================-->
-    <div class="se-pre-con"></div>
+<body class="no-scroll-y">
+    <!-- ======================spinner=========================-->
+    <div id="overlayer"></div>
+    <div class="wrapper">
+        <div class="loader">
+        </div>
+    </div>
+
     <!--=================== header starts here==================== -->
     <header class="bg-color">
         <!-- ==================navigation bar===============   -->
@@ -548,11 +552,13 @@
             document.documentElement.scrollTop = 0;
         }
 
-        $(document).ready(function() {
-            // Animate loader off screen
-            $(".se-pre-con").fadeOut("slow");
-        });
+        $(window).load(function() {
+            $(".loader").delay(2000).fadeOut(1000, function() {
+                $('body').removeClass('no-scroll-y');
+            });
+            $("#overlayer").delay(2000).fadeOut("slow");
 
+        })
 
         AOS.init();
     </script>
